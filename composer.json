@@ -1,0 +1,44 @@
+{
+    "name": "breadthe/php-contrast",
+    "description": "Color and contrast tools",
+    "keywords": [
+        "breadthe",
+        "php-contrast"
+    ],
+    "homepage": "https://github.com/breadthe/php-contrast",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Omigosh Dev",
+            "email": "omigoshdev@protonmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "7.*",
+        "ext-json": "*",
+        "tightenco/collect": "^6.14"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Breadthe\\PhpContrast\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Breadthe\\PhpContrast\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
