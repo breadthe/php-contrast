@@ -1,4 +1,4 @@
-# Very short description of the package
+# PHP Contrast Tools
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/breadthe/php-contrast.svg?style=flat-square)](https://packagist.org/packages/breadthe/php-contrast)
 [![Build Status](https://img.shields.io/travis/breadthe/php-contrast/master.svg?style=flat-square)](https://travis-ci.org/breadthe/php-contrast)
@@ -6,6 +6,8 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/breadthe/php-contrast.svg?style=flat-square)](https://packagist.org/packages/breadthe/php-contrast)
 
 Provides various utilities for working with color contrast.
+
+The primary purpose is to facilitate easy generation of accessible (minimum 3.0 contrast ratio) hex color pairs. A variation of these tools restricts the generated colors to [TailwindCSS's](https://tailwindcss.com/) default palette.
 
 ## Installation
 
@@ -20,7 +22,6 @@ composer require breadthe/php-contrast
 Import the class.
 
 ```php
-//use Breadthe\PhpContrast\Contrast;
 use Breadthe\PhpContrast\HexColor;
 use Breadthe\PhpContrast\HexColorPair;
 use Breadthe\PhpContrast\TailwindColor;
