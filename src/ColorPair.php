@@ -17,7 +17,7 @@ class ColorPair
 
     /**
      * '000' => '#000000'
-     * '000000' => '#000000'
+     * '000000' => '#000000'.
      */
 //    protected function normalize($color)
 //    {
