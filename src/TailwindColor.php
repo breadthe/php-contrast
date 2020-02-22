@@ -16,7 +16,7 @@ class TailwindColor implements Color
     }
 
     /**
-     * Returns all the default Tailwind colors
+     * Returns all the default Tailwind colors.
      */
     public static function colors(): array
     {
@@ -29,7 +29,7 @@ class TailwindColor implements Color
     }
 
     /**
-     * Returns a random Tailwind color
+     * Returns a random Tailwind color.
      */
     public static function random(): HexColor
     {
@@ -69,7 +69,7 @@ class TailwindColor implements Color
     }
 
     /**
-     * Returns a random pair of accessible (min. contrast 3:1) Tailwind colors
+     * Returns a random pair of accessible (min. contrast 3:1) Tailwind colors.
      */
     public static function randomPair(): HexColorPair
     {
@@ -122,6 +122,6 @@ class TailwindColor implements Color
 
     protected function parseDefaultTailwindColors()
     {
-        return json_decode(file_get_contents(__DIR__ . '/../stubs/twcolors.json'), true);
+        return json_decode(file_get_contents(__DIR__.'/../stubs/twcolors.json'), true);
     }
 }

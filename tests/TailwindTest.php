@@ -6,7 +6,6 @@ use Breadthe\PhpContrast\HexColor;
 use Breadthe\PhpContrast\HexColorPair;
 use Breadthe\PhpContrast\TailwindColor;
 use PHPUnit\Framework\TestCase;
-use Tightenco\Collect\Support\Collection;
 
 class TailwindTest extends TestCase
 {
@@ -47,7 +46,7 @@ class TailwindTest extends TestCase
     /** @test */
     public function it_can_merge_default_and_custom_colors()
     {
-        $customPalette = json_decode(file_get_contents(__DIR__ . '/../stubs/custom-palette.json'), true);
+        $customPalette = json_decode(file_get_contents(__DIR__.'/../stubs/custom-palette.json'), true);
 
         $colors = TailwindColor::merge($customPalette)->getColors();
         $customPalette = collect($customPalette)
