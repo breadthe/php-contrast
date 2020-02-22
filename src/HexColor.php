@@ -25,22 +25,22 @@ class HexColor implements Color
 
     /**
      * '#abc' or 'abc' => '#aabbcc'
-     * '#abcdef' or 'abcdef' => '#abcdef'
+     * '#abcdef' or 'abcdef' => '#abcdef'.
      */
     protected function normalize(string $hexColor)
     {
         // '#abcdef' or 'abcdef'
         if (preg_match('/^\s*#?([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})\s*$/i', $hexColor, $matches)) {
-            return sprintf("#%s%s%s", $matches[1], $matches[2], $matches[3]);
+            return sprintf('#%s%s%s', $matches[1], $matches[2], $matches[3]);
         }
 
         // '#abc' or 'abc'
         if (preg_match('/^\s*#?([0-9a-f])([0-9a-f])([0-9a-f])\s*$/i', $hexColor, $matches)) {
-            return sprintf("#%s%s%s", str_repeat($matches[1], 2), str_repeat($matches[2], 2),
+            return sprintf('#%s%s%s', str_repeat($matches[1], 2), str_repeat($matches[2], 2),
                 str_repeat($matches[3], 2));
         }
 
-        return null; // TODO throw
+        // TODO throw
     }
 
     /**
@@ -48,7 +48,7 @@ class HexColor implements Color
      */
     protected static function randomColor()
     {
-        return static::randomColorPart() . static::randomColorPart() . static::randomColorPart();
+        return static::randomColorPart().static::randomColorPart().static::randomColorPart();
     }
 
     protected static function randomColorPart()

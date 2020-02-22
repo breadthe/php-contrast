@@ -3,7 +3,6 @@
 namespace Breadthe\PhpContrast\Tests;
 
 use Breadthe\PhpContrast\HexColor;
-use Breadthe\PhpContrast\HexColorPair;
 use PHPUnit\Framework\TestCase;
 
 class HexColorTest extends TestCase

@@ -79,8 +79,8 @@ class HexColorPair
 
     protected static function calculateRatio(HexColor $fg = null, HexColor $bg = null)
     {
-        if (!$fg || !$bg) {
-            return null;
+        if (! $fg || ! $bg) {
+            return;
         }
 
         $fgLuminance = static::luminance($fg);
@@ -108,11 +108,11 @@ class HexColorPair
         $g = ($gSrgb <= 0.03928) ? $gSrgb / 12.92 : pow((($gSrgb + 0.055) / 1.055), 2.4);
         $b = ($bSrgb <= 0.03928) ? $bSrgb / 12.92 : pow((($bSrgb + 0.055) / 1.055), 2.4);
 
-        return (0.2126 * $r + 0.7152 * $g + 0.0722 * $b);
+        return 0.2126 * $r + 0.7152 * $g + 0.0722 * $b;
     }
 
     /**
-     * '#abcdef' => ['ab', 'cd', 'ef']
+     * '#abcdef' => ['ab', 'cd', 'ef'].
      */
     protected static function rgbHexChannels(HexColor $hexColor): array
     {

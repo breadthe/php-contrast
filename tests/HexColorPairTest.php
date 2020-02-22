@@ -70,23 +70,23 @@ class HexColorPairTest extends TestCase
     {
         yield 'maximum contrast' => [
             21,
-            ['000', 'fff',],
+            ['000', 'fff'],
         ];
         yield 'no contrast - black on black' => [
             1,
-            ['000', '000',],
+            ['000', '000'],
         ];
         yield 'no contrast - white on white' => [
             1,
-            ['fff', 'fff',],
+            ['fff', 'fff'],
         ];
         yield 'high contrast' => [
             18.4,
-            ['300', 'fff',],
+            ['300', 'fff'],
         ];
         yield 'low contrast' => [
             1.1,
-            ['300', '000',],
+            ['300', '000'],
         ];
     }
 }
