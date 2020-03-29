@@ -70,10 +70,10 @@ $hexColorPair->bg->name; // null
 
 ```php
 // Minimum 3:1 contrast ratio
-HexColorPair::sibling('000000'); // [21, '000000', 'ffffff']
+HexColorPair::sibling('000000')->hex; // '#ffffff'
 
 // Minimum specified contrast ratio (no less than 3:1)
-HexColorPair::minContrast(4.5)->getSibling('000000'); // [21, '000000', 'ffffff']
+HexColorPair::minContrast(4.5)->getSibling('000000')->hex; // '#ffffff'
 ```
 
 ## Generate a random TailwindCSS color
