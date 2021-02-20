@@ -16,12 +16,12 @@
         }
     ],
     "require": {
-        "php": "7.*",
+        "php": ">=7.3",
         "ext-json": "*",
-        "tightenco/collect": "^6.14"
+        "illuminate/collections": "^8"
     },
     "require-dev": {
-        "phpunit/phpunit": "^7.0"
+        "phpunit/phpunit": "^9.3.0"
     },
     "autoload": {
         "psr-4": {

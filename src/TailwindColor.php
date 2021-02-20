@@ -2,7 +2,7 @@
 
 namespace Breadthe\PhpContrast;
 
-use Tightenco\Collect\Support\Collection;
+use Illuminate\Support\Collection;
 
 class TailwindColor implements Color
 {

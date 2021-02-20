@@ -58,6 +58,6 @@ class TailwindTest extends TestCase
 
         $randomCustomPaletteElement = $customPalette[rand(0, count($customPalette) - 1)];
 
-        self::assertContains($randomCustomPaletteElement, $colors, false, true, false);
+        self::assertContainsEquals($randomCustomPaletteElement, $colors, false);
     }
 }

@@ -37,7 +37,7 @@ class HexColorTest extends TestCase
     {
         $randomHexColor = HexColor::random();
 
-        self::assertRegExp('/^#[0-9a-f]{6}$/i', $randomHexColor->hex);
+        self::assertMatchesRegularExpression('/^#[0-9a-f]{6}$/i', $randomHexColor->hex);
         self::assertNull($randomHexColor->name);
     }
 }
